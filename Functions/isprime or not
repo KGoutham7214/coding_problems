@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class leetcode {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number :");
+        int a = input.nextInt();
+        System.out.println(primeornot(a));
+    }
+
+    static boolean primeornot(int a) {
+        for (int i = 2; i < a; i++) {
+            if (a % i == 0) {
+                return false;
+            }
+
+        }
+        return true;
+
+    }
+
+}
