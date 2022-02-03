@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class leetcode {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number :");
+        int a = input.nextInt();
+        String vote = tovote(a);
+        System.out.println(vote);
+
+        input.close();
+    }
+
+    static String tovote(int age) {
+        String r = "Not_Eligible_to_vote";
+        if (age > 18) {
+            r = "Eligible_to_vote";
+        }
+
+        return r;
+
+    }
+}
