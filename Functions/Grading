@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class leetcode {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number :");
+        int a = input.nextInt();
+        grade(a);
+    }
+
+    static void grade(int a) {
+        if (a > 90) {
+            System.out.println("AA");
+        } else if (a > 80) {
+            System.out.println("AB");
+        } else if (a > 70) {
+            System.out.println("BB");
+        } else if (a > 60) {
+            System.out.println("BC");
+        } else if (a > 50) {
+            System.out.println("CD");
+        } else if (a > 40) {
+            System.out.println("DD");
+        } else {
+            System.out.println("FAIL");
+        }
+
+    }
+
+}
