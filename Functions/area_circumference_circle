@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class leetcode {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the radius :");
+        float a = input.nextInt();
+        float cir = circumference(a);
+        System.out.println("circumference = " + cir);
+        float area = area(a);
+        System.out.println("area = " + area);
+
+        input.close();
+    }
+
+    static float circumference(Float a) {
+        float cir;
+        cir = 2 * a * (22 / 7);
+
+        return cir;
+
+    }
+
+    static float area(Float a) {
+        float area;
+        area = a * a * (22 / 7);
+
+        return area;
+
+    }
+
+}
